@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio resmi Pajar Rudin - Web Developer dan Mahasiswa Semester 5 Sistem Informasi Universitas Pamulang (UNPAM). Menampilkan karya, keahlian, dan informasi kontak.">
+    <meta name="author" content="Pajar Rudin">
+    <title>Pajar Rudin | Web Developer & Mahasiswa UNPAM Semester 5</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-avatar">PR</div>
+                <div class="brand-text">
+                    <span class="brand-name">Pajar Rudin</span>
+                    <span class="brand-status">Web Developer • UNPAM</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Beranda</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                    <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                    <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#kontak" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                </a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu Navigasi">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    <span>Tersedia untuk Peluang & Proyek Web</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Halo, Saya <span class="text-gradient">Pajar Rudin</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    <span>Web Developer</span>
+                    <span class="dot"></span>
+                    <span>Mahasiswa UNPAM Semester 5</span>
+                </div>
+
+                <p class="hero-description">
+                    Mahasiswa aktif semester 5 Program Studi <strong>Sistem Informasi di Universitas Pamulang
+                        (UNPAM)</strong> dengan minat mendalam pada pengembangan web modern. Berfokus menghadirkan
+                    antarmuka pengguna yang responsif, estetis, dan fungsional dengan standar kode yang bersih.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#portofolio" class="btn btn-primary">
+                        <i class="fa-solid fa-briefcase"></i> Lihat Portofolio
+                    </a>
+                    <a href="#kontak" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Kontak Saya
+                    </a>
+                </div>
+
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-num">Semester 5</span>
+                        <span class="highlight-label">UNPAM Sistem Informasi</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">10+</span>
+                        <span class="highlight-label">Proyek & Eksplorasi</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">100%</span>
+                        <span class="highlight-label">Dedikasi & Disiplin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual Image Frame -->
+            <div class="hero-visual">
+                <div class="profile-card-wrapper">
+                    <div class="profile-glow-bg"></div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="floating-badge floating-badge-1">
+                        <div class="badge-icon purple">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="badge-info">
+                            <span class="badge-title">Universitas Pamulang</span>
+                            <span class="badge-sub">Semester 5 Aktif</span>
+                        </div>
+                    </div>
+
+                    <!-- Profile Card with Real Photo -->
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="profile.jpeg" alt="Pajar Rudin - Web Developer & Mahasiswa UNPAM"
+                                class="profile-img">
+                            <div class="profile-overlay">
+                                <span class="overlay-name">Pajar Rudin</span>
+                                <span class="overlay-tag"><i class="fa-solid fa-code"></i> Frontend & Web
+                                    Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="floating-badge floating-badge-2">
+                        <div class="badge-icon blue">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="badge-info">
+                            <span class="badge-title">Serang, Banten</span>
+                            <span class="badge-sub">KP. Ciherang</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TENTANG SAYA ================= -->
+    <section id="tentang">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user"></i> Tentang Saya</span>
+                <h2 class="section-title">Dedikasi di Bidang <span class="text-gradient">Teknologi Web</span></h2>
+                <p class="section-subtitle">
+                    Mengenal lebih dekat latar belakang akademik dan profil diri saya sebagai mahasiswa dan calon web
+                    developer profesional.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Bio Description Card -->
+                <div class="card about-bio">
+                    <h3>Membangun Solusi Digital Lewat Kode</h3>
+                    <p>
+                        Saya adalah seorang mahasiswa yang antusias dan sedang menempuh pendidikan di
+                        <strong>Universitas Pamulang (UNPAM)</strong> semester 5. Sejak awal perkuliahan, ketertarikan
+                        saya terhadap dunia pembuatan website terus berkembang, mendorong saya untuk terus mengasah
+                        kemampuan teknis baik di dalam maupun di luar kampus.
+                    </p>
+                    <p>
+                        Dengan bekal pemahaman fundamental HTML, CSS, JavaScript, serta arsitektur basis data, saya
+                        terbiasa memecahkan masalah logika dan merancang antarmuka web yang nyaman digunakan pengguna
+                        (User-Friendly).
+                    </p>
+
+                    <div class="unpam-badge-box">
+                        <div class="unpam-icon">
+                            <i class="fa-solid fa-building-columns text-gradient"></i>
+                        </div>
+                        <div class="unpam-text">
+                            <h4>Universitas Pamulang (UNPAM)</h4>
+                            <p>Program Studi Sistem Informasi — Semester 5 (Reguler)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biodata List Card -->
+                <div class="card">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 24px;">
+                        <i class="fa-solid fa-address-card text-gradient"></i> Data Pribadi
+                    </h3>
+
+                    <div class="biodata-list">
+                        <div class="biodata-item">
+                            <div class="bio-icon">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="bio-info">
+                                <span class="bio-label">Nama Lengkap</span>
+                                <span class="bio-val">Pajar Rudin</span>
+                            </div>
+                        </div>
+
+                        <div class="biodata-item">
+                            <div class="bio-icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div class="bio-info">
+                                <span class="bio-label">Status Akademik</span>
+                                <span class="bio-val">Mahasiswa UNPAM Semester 5</span>
+                            </div>
+                        </div>
+
+                        <div class="biodata-item">
+                            <div class="bio-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="bio-info">
+                                <span class="bio-label">Spesialisasi</span>
+                                <span class="bio-val">Web Developer / Frontend Enthusiast</span>
+                            </div>
+                        </div>
+
+                        <div class="biodata-item">
+                            <div class="bio-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="bio-info">
+                                <span class="bio-label">Email Resmi</span>
+                                <a href="mailto:pajarrudinn10@gmail.com"
+                                    class="bio-val email-link">pajarrudinn10@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="biodata-item">
+                            <div class="bio-icon">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div class="bio-info">
+                                <span class="bio-label">Alamat Lengkap</span>
+                                <span class="bio-val">KP. CIHERANG M RT/RW 01/01, DS. CIHERANG KEC. GUNUNG SARI KAB.
+                                    SERANG-BANTEN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KEAHLIAN ================= -->
+    <section id="keahlian" style="background: rgba(17, 24, 39, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-bolt"></i> Kompetensi</span>
+                <h2 class="section-title">Keahlian & <span class="text-gradient">Tech Stack</span></h2>
+                <p class="section-subtitle">
+                    Kombinasi kemampuan teknologi web dan perangkat kerja yang saya gunakan dalam membangun aplikasi dan
+                    website modern.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon text-gradient">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="category-title">Frontend Dasar & Modern</h3>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>HTML5 Semantik</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>CSS3 (Flexbox & Grid)</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>JavaScript (DOM & ES6+)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>Desain Web Responsif</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Workflow -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon text-gradient">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="category-title">Tools & Development</h3>
+                    </div>
+
+                    <div class="skill-items-list">
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>Visual Studio Code</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>Git & GitHub Repository</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>Chrome Developer Tools</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-meta">
+                                <span>Figma UI / Prototyping</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kompetensi Akademik & Soft Skills -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon text-gradient">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="category-title">Kompetensi Tambahan</h3>
+                    </div>
+
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px;">
+                        Kemampuan analitis dan pemecahan masalah yang dipelajari selama perkuliahan di Universitas
+                        Pamulang:
+                    </p>
+
+                    <div class="skill-pills">
+                        <span class="skill-pill"><i class="fa-solid fa-database"></i> Basis Data (SQL)</span>
+                        <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Algoritma
+                            Pemrograman</span>
+                        <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Analisis Sistem</span>
+                        <span class="skill-pill"><i class="fa-solid fa-users"></i> Kerja Sama Tim</span>
+                        <span class="skill-pill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+                        <span class="skill-pill"><i class="fa-solid fa-clock"></i> Manajemen Waktu</span>
+                        <span class="skill-pill"><i class="fa-solid fa-book-open"></i> Fast Learner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PENDIDIKAN ================= -->
+    <section id="pendidikan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-school"></i> Riwayat Pendidikan</span>
+                <h2 class="section-title">Perjalanan <span class="text-gradient">Akademik</span></h2>
+                <p class="section-subtitle">
+                    Jejak pendidikan formal yang mendasari pembentukan wawasan logika dan keahlian di dunia IT.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- UNPAM -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge"><i class="fa-solid fa-calendar-days"></i> 2022 — Sekarang (Sedang
+                            Berjalan)</span>
+                        <h3 class="timeline-title">S1 Sistem Informasi</h3>
+                        <h4 class="timeline-inst"><i class="fa-solid fa-graduation-cap"></i> Universitas Pamulang
+                            (UNPAM)</h4>
+                        <p class="timeline-desc">
+                            Saat ini aktif sebagai <strong>Mahasiswa Semester 5</strong>. Mempelajari rekayasa perangkat
+                            lunak, pemrograman web interaktif, struktur data, basis data relasional, dan arsitektur
+                            sistem informasi. Aktif mengerjakan studi kasus pemrograman dan proyek mandiri berbasis web.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pendidikan Sebelumnya -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge"><i class="fa-solid fa-calendar-days"></i> Lulus Tahun 2022</span>
+                        <h3 class="timeline-title">Pendidikan Menengah Atas / Kejuruan</h3>
+                        <h4 class="timeline-inst"><i class="fa-solid fa-school"></i> Wilayah Kab. Serang, Banten</h4>
+                        <p class="timeline-desc">
+                            Menyelesaikan pendidikan tingkat atas dengan fokus yang kuat pada disiplin ilmu eksakta,
+                            ketekunan belajar, dan dasar-dasar pengoperasian komputer serta perangkat lunak digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTOFOLIO / PROYEK ================= -->
+    <section id="portofolio" style="background: rgba(17, 24, 39, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Karya Unggulan</span>
+                <h2 class="section-title">Proyek <span class="text-gradient">Web Developer</span></h2>
+                <p class="section-subtitle">
+                    Beberapa contoh karya dan representasi aplikasi web yang dikembangkan menggunakan fondasi CSS dan
+                    JavaScript modern.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="project-thumb-pattern"></div>
+                        <div class="thumb-icon-preview text-gradient">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="project-tag-floating">Sistem Akademik</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Sistem Informasi Mahasiswa UNPAM</h3>
+                        <p class="project-desc">
+                            Konsep dashboard portal akademik untuk pemantauan jadwal kuliah semester, rekap IPK per
+                            semester, pengumpulan tugas, dan biodata mahasiswa berbasis web responsif.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#kontak" class="btn btn-secondary btn-sm" style="flex: 1;">
+                                <i class="fa-solid fa-eye"></i> Detail Proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="project-thumb-pattern"></div>
+                        <div class="thumb-icon-preview text-gradient">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <span class="project-tag-floating">Portal Informasi</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Website Profil Desa Ciherang</h3>
+                        <p class="project-desc">
+                            Rancangan website informasi publik dan profil untuk Desa Ciherang, Gunung Sari,
+                            Serang-Banten. Menampilkan data potensi desa, kegiatan warga, dan administrasi surat
+                            digital.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Modern CSS</span>
+                            <span class="tech-tag">Flexbox</span>
+                            <span class="tech-tag">Responsive UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#kontak" class="btn btn-secondary btn-sm" style="flex: 1;">
+                                <i class="fa-solid fa-eye"></i> Detail Proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="project-thumb-pattern"></div>
+                        <div class="thumb-icon-preview text-gradient">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="project-tag-floating">E-Commerce Web</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Katalog & Toko Online Interaktif</h3>
+                        <p class="project-desc">
+                            Platform e-commerce dengan sistem filter produk, keranjang belanja (shopping cart), dan
+                            tampilan kalkulasi harga secara interaktif tanpa reload halaman.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML & CSS</span>
+                            <span class="tech-tag">JavaScript DOM</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#kontak" class="btn btn-secondary btn-sm" style="flex: 1;">
+                                <i class="fa-solid fa-eye"></i> Detail Proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-comments"></i> Hubungi Saya</span>
+                <h2 class="section-title">Mari <span class="text-gradient">Terhubung</span></h2>
+                <p class="section-subtitle">
+                    Silakan hubungi saya untuk diskusi seputar proyek web development, kolaborasi, tugas akademik,
+                    maupun tawaran magang.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Kontak Lengkap -->
+                <div class="contact-info-card">
+                    <h3 class="contact-info-title">Informasi Kontak</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Saya selalu terbuka untuk berdiskusi mengenai proyek web baru, ide-ide kreatif, atau kesempatan
+                        magang dan kerja sama tim.
+                    </p>
+
+                    <div class="contact-channel">
+                        <div class="channel-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="channel-detail">
+                            <h5>Email Utama</h5>
+                            <a href="mailto:pajarrudinn10@gmail.com">pajarrudinn10@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-channel">
+                        <div class="channel-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="channel-detail">
+                            <h5>Alamat Domisili</h5>
+                            <p>KP. CIHERANG M RT/RW 01/01, DS. CIHERANG KEC. GUNUNG SARI KAB. SERANG-BANTEN</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-channel">
+                        <div class="channel-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="channel-detail">
+                            <h5>Status Akademik</h5>
+                            <p>Universitas Pamulang (UNPAM) • Semester 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Pesan -->
+                <div class="contact-form-card">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="senderName" class="form-label">Nama Lengkap</label>
+                            <input type="text" id="senderName" class="form-control" placeholder="Masukkan nama Anda..."
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senderEmail" class="form-label">Email Anda</label>
+                            <input type="email" id="senderEmail" class="form-control" placeholder="contoh@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageSubject" class="form-label">Subjek / Topik</label>
+                            <input type="text" id="messageSubject" class="form-control"
+                                placeholder="Contoh: Tawaran Proyek Website / Pertanyaan" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageBody" class="form-label">Pesan</label>
+                            <textarea id="messageBody" class="form-control"
+                                placeholder="Tuliskan pesan atau kebutuhan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Pajar Rudin</div>
+                <p class="footer-tagline">
+                    Web Developer & Mahasiswa Semester 5 Sistem Informasi di Universitas Pamulang (UNPAM).
+                </p>
+
+                <div class="footer-socials">
+                    <a href="mailto:pajarrudinn10@gmail.com" class="social-circle" title="Email"
+                        aria-label="Email Pajar Rudin">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle"
+                        title="GitHub" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle"
+                        title="LinkedIn" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pajar Rudin • Mahasiswa UNPAM Semester 5. Seluruh Hak Cipta Dilindungi.</p>
+                <p style="margin-top: 6px; font-size: 0.8rem;">Dibuat menggunakan Pure HTML5 & CSS3 Modern.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= INTERACTIVE SCRIPT ================= -->
+    <script>
+        // Mobile navigation menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (mobileToggle && navMenu) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = mobileToggle.querySelector('i');
+                if (navMenu.classList.contains('active')) {
+                    icon.className = 'fa-solid fa-xmark';
+                } else {
+                    icon.className = 'fa-solid fa-bars-staggered';
+                }
+            });
+
+            // Close mobile menu when clicking any nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    if (icon) icon.className = 'fa-solid fa-bars-staggered';
+                });
+            });
+        }
+
+        // Active navigation item on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            const scrollPos = window.pageYOffset + 120;
+
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (scrollPos >= top && scrollPos < top + height) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Simple Form Submission Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const email = document.getElementById('senderEmail').value;
+            const subject = document.getElementById('messageSubject').value;
+            const message = document.getElementById('messageBody').value;
+
+            // Create mailto link as fallback to send directly to Pajar Rudin's email
+            const mailtoLink = `mailto:pajarrudinn10@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Halo Pajar Rudin,\n\nNama: " + name + "\nEmail: " + email + "\n\nPesan:\n" + message)}`;
+
+            alert(`Terima kasih atas pesannya, ${name}! Email aplikasi Anda akan dibuka untuk mengirim pesan langsung ke pajarrudinn10@gmail.com`);
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>
